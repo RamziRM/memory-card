@@ -33,6 +33,7 @@ const Game = () => {
         } else {
             handleCardClick(id);
             handleScore();
+            console.log("should increment score");
         }
     };
 

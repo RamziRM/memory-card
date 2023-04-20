@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import Card from "./Card";
 
-const CContainer = () => {
+const CContainer = ({ handleGameLogic }) => {
     const [cards, setCards] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -35,6 +35,7 @@ const CContainer = () => {
                 <Card
                     key={card.id}
                     card={card}
+                    handleGameLogic={handleGameLogic}
                     shuffleCards={shuffleCards}
                 />
                 ))}
