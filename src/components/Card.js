@@ -1,12 +1,12 @@
 import React from "react";
 
-
 // destructured object as parameter
 // (would be the same as props.card and props.shuffleCards)
-const Card = ({ card, shuffleCards }) => {
-  const { title, url } = card;
+const Card = ({ card, shuffleCards, handleGameLogic }) => {
+  const { id, title, url } = card;
 
   const handleClick = () => {
+    handleGameLogic(id);
     shuffleCards();
   };
 
