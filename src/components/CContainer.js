@@ -10,6 +10,11 @@ const CContainer = () => {
         fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
             .then((response) => response.json())
             .then((data) => {
+                // shuffle the cards/photos
+                for (let i = data.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [data[i], data[j]] = [data[j], data[i]];
+                }
                 setCards(data);
                 setLoading(false);
             });
