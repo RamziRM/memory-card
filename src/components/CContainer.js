@@ -20,16 +20,25 @@ const CContainer = () => {
             });
     }, []);
 
+    const shuffleCards = () => {
+        const shuffledCards = cards.sort(() => Math.random() - 0.5);
+        setCards([...shuffledCards]);
+      };
+    
     return (
         <div className="container">
             {loading ? (
-                <h1>Loading...</h1>
+            <h1>Loading...</h1>
             ) : (
-                <div className="row">
-                    {cards.map((card) => (
-                        <Card key={card.id} card={card} />
-                    ))}
-                </div>
+            <div className="row">
+                {cards.map((card) => (
+                <Card
+                    key={card.id}
+                    card={card}
+                    shuffleCards={shuffleCards}
+                />
+                ))}
+            </div>
             )}
         </div>
     );
