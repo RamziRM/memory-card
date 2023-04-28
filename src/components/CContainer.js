@@ -26,11 +26,11 @@ const CContainer = ({ handleGameLogic }) => {
       };
     
     return (
-        <div className="container">
+        <div className="">
             {loading ? (
             <h1>Loading...</h1>
             ) : (
-            <div className="row">
+            <div className="flex flex-col items-center bg-gray-300">
                 {cards.map((card, i) => (
                 <Card
                     key={card.id}
