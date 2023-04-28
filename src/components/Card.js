@@ -13,7 +13,7 @@ const Card = ({ card, shuffleCards, handleGameLogic }) => {
   return (
     <div className="shadow-2xl p-7 bg-gray-600 border-red border-4" onClick={handleClick}>
       <div className="">
-        <img className="rounded-full h-50 object-cover" src={url} alt={title} />
+        <img className="rounded-3xl h-50 object-cover" src={url} alt={title} />
       </div>
       {/* <div className="card-content">
         <h2>{title}</h2>
