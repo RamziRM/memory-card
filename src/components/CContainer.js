@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from "react";
 import Card from "./Card";
+import { images } from "./imageLoader";
 
 const CContainer = ({ handleGameLogic }) => {
     const [cards, setCards] = useState([]);
@@ -7,18 +8,17 @@ const CContainer = ({ handleGameLogic }) => {
 
     useEffect(() => {
         setLoading(true);
-        fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
-            .then((response) => response.json())
-            .then((data) => {
-                // shuffle the cards/photos
-                for (let i = data.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [data[i], data[j]] = [data[j], data[i]];
-                }
-                setCards(data);
-                setLoading(false);
-            });
-    }, []);
+        // Instead of fetching images from an API, use the imported images
+        const data = images.map((src, i) => ({ id: i + 1, title: `Image ${i + 1}`, url: src }));
+        // Shuffle the cards/photos
+        for (let i = data.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data[i], data[j]] = [data[j], data[i]];
+        }
+        setCards(data);
+        setLoading(false);
+      }, []);
+      
 
     const shuffleCards = () => {
         const shuffledCards = cards.sort(() => Math.random() - 0.5);
@@ -26,12 +26,12 @@ const CContainer = ({ handleGameLogic }) => {
       };
     
     return (
-        <div className="container">
+        <div className="">
             {loading ? (
             <h1>Loading...</h1>
             ) : (
-            <div className="row">
-                {cards.map((card) => (
+            <div className="flex flex-col items-center bg-gray-300">
+                {cards.map((card, i) => (
                 <Card
                     key={card.id}
                     card={card}

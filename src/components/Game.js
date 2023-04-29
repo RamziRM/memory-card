@@ -40,9 +40,7 @@ const Game = () => {
     return (
         <div>
             <Header score={score} highScore={highScore} />
-            <div className="container">
-                <CContainer handleGameLogic={handleGameLogic}/>
-            </div>
+            <CContainer handleGameLogic={handleGameLogic} />
         </div>
     );
 }
