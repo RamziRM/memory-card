@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.8bfcad52.css",
-    "main.js": "/memory-card/static/js/main.8713d05d.js",
+    "main.css": "/memory-card/static/css/main.849e34e1.css",
+    "main.js": "/memory-card/static/js/main.f2b6498b.js",
     "static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (22).png": "/memory-card/static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (22).a13d0a02ea9a0aacdde3.png",
     "static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (15).png": "/memory-card/static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (15).dfb118faa9ae723e3249.png",
     "static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (14).png": "/memory-card/static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (14).7603e2f3c2da63064013.png",
@@ -30,11 +30,11 @@
     "static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (3).png": "/memory-card/static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (3).339033f703dcadc35dfd.png",
     "static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (26).png": "/memory-card/static/media/www.fifa.com_fifaplus_en_tournaments_mens_worldcup_qatar2022_teams_argentina_squad (26).8bb53e9aa8cc39d9e72c.png",
     "index.html": "/memory-card/index.html",
-    "main.8bfcad52.css.map": "/memory-card/static/css/main.8bfcad52.css.map",
-    "main.8713d05d.js.map": "/memory-card/static/js/main.8713d05d.js.map"
+    "main.849e34e1.css.map": "/memory-card/static/css/main.849e34e1.css.map",
+    "main.f2b6498b.js.map": "/memory-card/static/js/main.f2b6498b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bfcad52.css",
-    "static/js/main.8713d05d.js"
+    "static/css/main.849e34e1.css",
+    "static/js/main.f2b6498b.js"
   ]
 }
