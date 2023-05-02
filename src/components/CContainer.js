@@ -30,7 +30,7 @@ const CContainer = ({ handleGameLogic }) => {
             {loading ? (
             <h1>Loading...</h1>
             ) : (
-            <div className="flex flex-col items-center bg-gray-300">
+            <div className="grid grid-cols-4 bg-gray-300">
                 {cards.map((card, i) => (
                 <Card
                     key={card.id}
