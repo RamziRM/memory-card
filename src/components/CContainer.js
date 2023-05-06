@@ -33,7 +33,7 @@ const CContainer = ({ handleGameLogic }) => {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 bg-gray-300">
+        <div className="pt-12 grid grid-cols-2 md:grid-cols-4 bg-gray-300">
           {cards.map((card, i) => (
             <Card
               key={card.id}
